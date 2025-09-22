@@ -1,0 +1,15 @@
+
+function updateDashboard() {
+  const pessoas = Math.floor(Math.random() * 15); // Simulação
+  const limite = localStorage.getItem('limite') || 10;
+  document.getElementById('count').textContent = `Pessoas: ${pessoas}`;
+  document.getElementById('status').textContent = pessoas > limite ? 'Lotado' : (pessoas > 0 ? 'Ocupado' : 'Vazio');
+}
+
+function saveSettings() {
+  const limite = document.getElementById('limit').value;
+  localStorage.setItem('limite', limite);
+  alert('Configuração salva!');
+}
+
+setInterval(updateDashboard, 3000);
