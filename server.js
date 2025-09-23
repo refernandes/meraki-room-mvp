@@ -9,7 +9,7 @@ let roomState = { state: "Vago", peopleCount: 0 };
 // CONFIGURAÇÕES - substitua depois com variáveis de ambiente
 const MERAKI_API_KEY = process.env.MERAKI_API_KEY || e9a3c0102a42e7a52bc915d9c43b3092d0d8a344;
 const NETWORK_ID = process.env.NETWORK_ID || "635570497412690470";
-const CAMERA_SERIAL = process.env.CAMERA_SERIAL || Q2FV-6J8Q-DN75;
+const CAMERA_SERIAL = process.env.CAMERA_SERIAL || "Q2FV-6J8Q-DN75";
 const POLL_INTERVAL = parseInt(process.env.POLL_INTERVAL) || 10; // segundos
 const LIMITE_OCUPADO = parseInt(process.env.LIMITE_OCUPADO) || 8;
 
